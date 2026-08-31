@@ -12,7 +12,7 @@ on:
       set_release:
         description: "Select OS Release."
         required: false
-        default: "all"
+        default: "trixie"
         type: choice
         options:
           - all
@@ -23,7 +23,7 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "amlogic"
+        default: "md1000-aic"
         type: choice
         options:
           - allwinner
@@ -109,6 +109,7 @@ on:
           - lz-d3588
           - lz-k3568
           - md1000
+          - md1000-aic
           - mrkaio-m68s
           - nanopc-t4
           - nanopc-t6
@@ -264,7 +265,7 @@ on:
       armbian_kernel:
         description: "Select kernel version."
         required: false
-        default: "6.12.y_6.18.y"
+        default: "6.18.y"
         type: choice
         options:
           - 5.10.y
@@ -281,9 +282,10 @@ on:
       kernel_repo:
         description: "Set the kernel repository."
         required: false
-        default: "ophub/kernel"
+        default: "wonder-ryan/amlogic-s9xxx-armbian"
         type: choice
         options:
+          - wonder-ryan/amlogic-s9xxx-armbian
           - ophub/kernel
       kernel_usage:
         description: "Set the tags of the stable kernel."

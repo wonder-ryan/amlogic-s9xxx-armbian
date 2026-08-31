@@ -80,7 +80,7 @@ ophub_release_file="etc/ophub-release"
 # U-BOOT files download repository
 uboot_repo="https://github.com/ophub/u-boot"
 # Firmware files download repository
-firmware_repo="https://github.com/ophub/firmware"
+firmware_repo="https://github.com/wonder-ryan/firmware"
 
 # Set the kernel download repository from github.com
 kernel_repo="https://github.com/ophub/kernel"

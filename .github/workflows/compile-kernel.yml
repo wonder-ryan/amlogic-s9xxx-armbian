@@ -13,9 +13,10 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "ophub"
+        default: "wonder-ryan"
         type: choice
         options:
+          - wonder-ryan
           - unifreq
           - ophub
       kernel_version:
